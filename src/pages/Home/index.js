@@ -1,8 +1,7 @@
 import logo from "./logo.svg";
-import Srikanth from "../srikanth";
 
 const Home = () => (
-    <div className="App">
+  <div className="App">
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
@@ -16,7 +15,10 @@ const Home = () => (
       >
         Learn React
       </a>
+      <a href="Madhavi">Madhavi</a>
     </header>
+    
+    
   </div>
 );
 export default Home;
