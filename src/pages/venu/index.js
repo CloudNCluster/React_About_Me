@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const Venu = () => {
-  const [buttonText, setButtonText] = useState("Click me");
+  const [buttonText, setButtonText] = useState(false);
   const [isButtonClicked, setIsButtonClicked] = useState(false);
 
 
@@ -19,8 +19,8 @@ const Venu = () => {
       <a href="/">Go to home page</a>
       {/* </header> */}
       <button onClick={handleClick}>click me</button>
-      <p style={{ color: isButtonClicked ? 'red' : 'green' }}>button clicked</p>
-      {buttonText && <p>buttons clicked</p>}
+      {buttonText && <p style={{ color: isButtonClicked ? 'red' : 'blue' }}>button clicked</p>}
+      
     </div>
   );
 };
