@@ -4,6 +4,7 @@ import Home from "../Home";
 import Srikanth from "../srikanth";
 import Naga from "../Naga";
 import Error from "../ErrorPage/Error";
+import Madhavi from "../Home/Madhavi";
 
 export default function Content() {
   return (
@@ -13,6 +14,7 @@ export default function Content() {
         <Route path="/srikanth" element={<Srikanth />} />
         <Route path='naga' element={<Naga />} />
         <Route path='*' element={<Error />} />
+        <Route path="/Madhavi" element={<Madhavi />} />
       </Routes>
     </BrowserRouter>
   );
