@@ -1,0 +1,8 @@
+.errorlink, .text{
+    display: flex;
+    justify-content: center;
+}
+.errorlink{
+    color: red;
+    font-weight: bolder;
+}

@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import logo from "./logo.svg";
+import './index.css';
 
 
 const Home = () => (
@@ -18,6 +20,7 @@ const Home = () => (
         Learn React
       </a>
       <a href="Madhavi">Madhavi</a>
+      <Link className="link" to='naga'> Navigate to Naga </Link>
     </header>
     
     

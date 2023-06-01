@@ -37,3 +37,9 @@
     }
   }
   
+  .link{
+    color: red;
+  }
+  .link:hover{
+    color: white
+  }
