@@ -1,3 +1,9 @@
 .h1-tag, .p-tag{
     text-align: center;
 }
+.button{
+    width: 10%;
+    height: 50px;
+    background-color: green;
+    color: white;
+}

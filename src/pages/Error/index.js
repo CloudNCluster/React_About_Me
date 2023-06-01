@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import "./index.css";
-import { useLocation } from "react-router-dom";
 
 const Error = () => {
-  const location = useLocation();
 
   return (
     <>
