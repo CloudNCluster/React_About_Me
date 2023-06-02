@@ -4,6 +4,9 @@ import "./index.css";
 const Home = () => (
   <div className="App">
     <header className="App-header">
+      <Link className="link" to="srikanth">
+        srikanth
+      </Link>
       <Link className="link" to="venu">
         Venu
       </Link>

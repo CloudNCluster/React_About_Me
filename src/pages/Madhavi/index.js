@@ -2,10 +2,19 @@ import { useState } from "react";
 import "./index.css";
 
 const Madhavi = () => {
+  const [value, setValue] = useState(false);
 
-  const [value, setValue]=useState(false)
+  const handleClick = () => setValue(!value);
 
-  const handleClick = () => setValue(!value)
+  const messages = ["Hello Madhavi", "Bye Madhavi"];
+
+  const [currentIndex, setcurrentIndex] = useState(1);
+
+  const handleClick1 = () => {
+    const nextIndex = (currentIndex + 1) % 2;
+    setcurrentIndex(nextIndex);
+    alert(messages[nextIndex]);
+  };
 
   return (
     <div>
@@ -18,9 +27,11 @@ const Madhavi = () => {
         The main concept of React. js is virtual DOM.
       </p>
       <a href="/">Back to home</a>
-
+      <br />
 
       <button onClick={handleClick}>click me</button>
+      <br />
+      <button onClick={handleClick1}>click here</button>
 
       {value && <p>I am here</p>}
     </div>
