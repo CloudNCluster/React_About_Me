@@ -27,7 +27,7 @@
 .App-link {
   color: #61dafb;
 }
-.App-middle{
+.App-middle {
   background-color: #0a2a6b;
   min-height: 100vh;
   display: flex;
@@ -36,7 +36,6 @@
   justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
-  
 }
 
 @keyframes App-logo-spin {
@@ -47,4 +46,3 @@
     transform: rotate(360deg);
   }
 }
-

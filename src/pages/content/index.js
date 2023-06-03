@@ -11,12 +11,13 @@ export default function Content() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/srikanth" element={<Srikanth />} />
-        <Route path='naga' element={<Naga />} />
-        <Route path='*' element={<Error />} />
-        <Route path='/venu' element={<Venu />} />
-        <Route path="/Madhavi" element={<Madhavi />} />
+        <Route path="/" element={<Home />}>
+          <Route path="/srikanth" element={<Srikanth />} />
+          <Route path="naga" element={<Naga />} />
+          <Route path="*" element={<Error />} />
+          <Route path="/venu" element={<Venu />} />
+          <Route path="/Madhavi" element={<Madhavi />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

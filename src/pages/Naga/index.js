@@ -18,7 +18,6 @@ const Naga = () => {
       setError(true);
     }
   };
-  console.log("click is", click, "Task is", task);
   var numberOfTasks = click.length;
   return (
     <>

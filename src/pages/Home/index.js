@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import "./index.css";
 
 const Home = () => (
-  <div className="App">
-    <header className="App-header">
-      <Link className="link" to="srikanth">
+  <>
+    <header className="header">
+      <Link to="srikanth" className="link">
         srikanth
       </Link>
       <Link className="link" to="venu">
@@ -18,6 +18,7 @@ const Home = () => (
         Naga
       </Link>
     </header>
-  </div>
+    <Outlet />
+  </>
 );
 export default Home;
