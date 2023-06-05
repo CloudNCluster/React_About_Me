@@ -1,5 +1,8 @@
 import { NavLink, Outlet } from "react-router-dom";
 import classes from "./index.module.css";
+import Header from "../venu/Header";
+import Footer from "../venu/Footer";
+
 const Home = () => (
   <>
     <header className={classes.header}>
@@ -30,7 +33,10 @@ const Home = () => (
         Naga
       </NavLink>
     </header>
+    <Header />
+
     <Outlet />
+    <Footer />
   </>
 );
 export default Home;
