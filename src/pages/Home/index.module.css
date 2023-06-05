@@ -1,16 +1,18 @@
-.link {
+a {
   padding: 2%;
   text-decoration: none;
-  color: white;
+  color: blue;
   font-weight: 600;
 }
-.link:hover {
+a:hover,
+a.active {
   color: red;
+  text-decoration: underline;
 }
 
 .header {
   display: flex;
   justify-content: flex-end;
-  background-color: blue;
+  background-color: white;
   box-shadow: 0 0 5px 2px black;
 }

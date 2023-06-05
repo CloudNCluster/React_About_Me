@@ -1,22 +1,34 @@
-import { Link, Outlet } from "react-router-dom";
-import "./index.css";
-
+import { NavLink, Outlet } from "react-router-dom";
+import classes from "./index.module.css";
 const Home = () => (
   <>
-    <header className="header">
-      <Link to="srikanth" className="link">
+    <header className={classes.header}>
+      <NavLink
+        to="srikanth"
+        className={({ isActive }) => (isActive ? classes.active : undefined)}
+        end
+      >
         srikanth
-      </Link>
-      <Link className="link" to="venu">
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? classes.active : undefined)}
+        to="venu"
+      >
         Venu
-      </Link>
-      <Link className="link" to="madhavi">
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? classes.active : undefined)}
+        to="madhavi"
+      >
         Madhavi
-      </Link>
+      </NavLink>
 
-      <Link className="link" to="naga">
+      <NavLink
+        className={({ isActive }) => (isActive ? classes.active : undefined)}
+        to="naga"
+      >
         Naga
-      </Link>
+      </NavLink>
     </header>
     <Outlet />
   </>
