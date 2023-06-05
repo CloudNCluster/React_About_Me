@@ -1,0 +1,9 @@
+.footer-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #020f2f;
+  padding: 50px;
+  margin-top: 10px;
+  color: white;
+}

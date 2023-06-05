@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import "./index.css";
 import { useState } from "react";
 
-const Naga = () => {
+const Naga = (props) => {
   const [click, setClick] = useState([]);
   const [task, setTask] = useState("");
   const [error, setError] = useState(false);
@@ -21,10 +22,15 @@ const Naga = () => {
   var numberOfTasks = click.length;
   return (
     <>
+      <h1> {props.completedValue} </h1>
+      <p>
+        The above number is the value brought from the content page via props.
+      </p>
       <h1 className="h1-tag"> This page Describes about Naga </h1>
       <p className="p-tag">Unfortunately, This page doesn't have anything...</p>
       <div className="task-board">
         <h2> Task Board </h2>
+
         <input
           type="text"
           value={task}
@@ -39,6 +45,7 @@ const Naga = () => {
         </button>
         <h2> Tasks: </h2>
         <h1> You have {numberOfTasks} Tasks.</h1>
+        <Link to="/"> HOme </Link>
         <ul>
           {click.map((eachRow) => (
             <li key={Math.random().toString()}>
