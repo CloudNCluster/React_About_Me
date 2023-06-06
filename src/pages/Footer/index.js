@@ -1,3 +1,4 @@
+import Button from "@mui/material/Button";
 import "./index.css";
 
 const Footer = () => {
@@ -9,7 +10,10 @@ const Footer = () => {
         top firm offering custom software solutions on advanced technologies to
         help businesses propel to the next generation of software development.
       </p>
-      <button> CONTACT US NOW </button>
+      {/* <button> CONTACT US NOW </button> */}
+      <Button variant="contained" color="success">
+        CONTACT US NOW
+      </Button>
     </div>
   );
 };

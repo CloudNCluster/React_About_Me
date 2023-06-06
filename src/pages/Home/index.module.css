@@ -17,6 +17,5 @@ a.active {
   box-shadow: 0 0 5px 2px black;
   position: sticky;
   top: 0px;
-  margin-top: 0px;
-
+  margin-top: 10px;
 }
