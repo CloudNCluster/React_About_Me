@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import Button from "@mui/material/Button";
+=======
+import MyComponent from "../Social media";
+>>>>>>> e4736836ae06179027e418d23e0fe756f2b81ba9
 import "./index.css";
 
 const Footer = () => {
@@ -10,10 +14,15 @@ const Footer = () => {
         top firm offering custom software solutions on advanced technologies to
         help businesses propel to the next generation of software development.
       </p>
+<<<<<<< HEAD
       {/* <button> CONTACT US NOW </button> */}
       <Button variant="contained" color="success">
         CONTACT US NOW
       </Button>
+=======
+      <MyComponent></MyComponent>
+      <button> CONTACT US NOW </button>
+>>>>>>> e4736836ae06179027e418d23e0fe756f2b81ba9
     </div>
   );
 };
