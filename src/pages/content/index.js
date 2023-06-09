@@ -25,7 +25,14 @@ export default function Content() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+            </>
+          }
+        >
           <Route path="/srikanth" element={<Srikanth title={title} />} />
           <Route path="naga" element={<Naga completedValue={completed} />} />
           <Route path="*" element={<Error />} />

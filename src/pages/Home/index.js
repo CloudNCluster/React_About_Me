@@ -1,13 +1,12 @@
 import { NavLink, Outlet } from "react-router-dom";
 import classes from "./index.module.css";
-import Header from "../venu/Header";
-import Footer from "../venu/Footer";
+import HeaderImage from "../HeaderImage/index";
 
 const Home = () => (
   <>
     <header className={classes.header}>
       <NavLink
-        to="srikanth"
+        to="/srikanth"
         className={({ isActive }) => (isActive ? classes.active : undefined)}
         end
       >
@@ -33,10 +32,8 @@ const Home = () => (
         Naga
       </NavLink>
     </header>
-    <Header />
-
+    <HeaderImage />
     <Outlet />
-    <Footer />
   </>
 );
 export default Home;
