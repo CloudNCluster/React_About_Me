@@ -8,6 +8,7 @@ const Naga = (props) => {
   const [click, setClick] = useState([]);
   const [task, setTask] = useState("");
   const [error, setError] = useState(false);
+  const [showText, setShowText] = useState(false);
 
   const taskHandler = (event) => {
     setTask(event.target.value);
@@ -23,19 +24,31 @@ const Naga = (props) => {
   };
   var numberOfTasks = click.length;
   const mUiButtonAction = () => {
-    console.log("MUI Working Properly");
+    setShowText(!showText);
   };
   return (
     <>
       <h1> {props.completedValue} </h1>
-      <p>
+      <p style={{ textAlign: "center", padding: "20px" }}>
         The above number is the value brought from the content page via props.
       </p>
       <h1 className="h1-tag"> This page Describes about Naga </h1>
       <p className="p-tag">Unfortunately, This page doesn't have anything...</p>
-      <Button variant="outlined" onClick={mUiButtonAction}>
-        Click me
+      <Button
+        variant="outlined"
+        onClick={mUiButtonAction}
+        style={{
+          position: "relative",
+          right: -400,
+        }}
+      >
+        {showText ? "Hide Text" : "Click me"}
       </Button>
+      {showText && (
+        <p style={{ textAlign: "center" }}>
+          This Button Created using Meterial-UI
+        </p>
+      )}
       <div className="task-board">
         <h2> Task Board </h2>
 
@@ -53,6 +66,7 @@ const Naga = (props) => {
           type="text"
           onChange={taskHandler}
           value={task}
+          style={{ marginBottom: "10px" }}
         />
 
         {error && <p style={{ color: "red" }}> Input Is Invalid</p>}
@@ -69,7 +83,7 @@ const Naga = (props) => {
         </Button>
         <h2> Tasks: </h2>
         <h1> You have {numberOfTasks} Tasks.</h1>
-        <Link to="/"> HOme </Link>
+        <Link to="/"> Home </Link>
         <ul>
           {click.map((eachRow) => (
             <li key={Math.random().toString()}>
