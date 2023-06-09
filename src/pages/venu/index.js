@@ -1,33 +1,51 @@
 import React from "react";
 import { useState } from "react";
+import { useEffect } from "react";
+import axios from "axios";
 
 const Venu = () => {
-  const [buttonText, setButtonText] = useState(false);
-  const [isButtonClicked, setIsButtonClicked] = useState(false);
-  const [count, setCount] = useState(0);
+  const [data, setData] = useState("");
+  const [showData, setShowData] = useState(false);
 
   const handleClick = () => {
-    setButtonText(!buttonText);
-    setIsButtonClicked(!isButtonClicked);
-    setCount(count + 1);
+    setShowData(!showData);
   };
 
 
+  const getAllData = () => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/users")
+      .then((response) => {
+        setData(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  useEffect(() => {
+    getAllData();
+  }, []);
+
   return (
     <div className="App">
-     
-      {/* <header className="App-middle"> */}
       <h1>This function is For Venu</h1>
-      <h5>This is sub heading</h5>
+
       <a href="/">Go to home page</a>
-      {/* </header> */}
-      <button onClick={handleClick}>click me</button>
-      <p>You have clicked {count} times</p>
-      {buttonText && (
-        <p style={{ color: isButtonClicked ? "red" : "blue" }}>
-          button clicked
-        </p>
-      )}
+      <button onClick={handleClick}>Users</button>
+
+      {showData ? (
+        data ? (
+          data.map((data) => (
+            <div className="App" key={data.id}>
+              <h3>{data.username}</h3>
+            </div>
+          ))
+        ) : (
+          <h3>No data yet</h3>
+        )
+      ) : null}
+
     </div>
   );
 };
