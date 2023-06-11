@@ -1,14 +1,14 @@
-// import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import Home from "../Home";
 import Srikanth from "../srikanth";
-import Naga from "../Naga";
+// import Naga from "../Naga";
 import Error from "../Error";
 import Madhavi from "../Madhavi";
 import Venu from "../venu";
 
 export default function Content() {
+  const NagaPage = lazy(() => import("../Naga"));
   const [title, setTitle] = useState("");
   const [completed, setCompleted] = useState(false);
   useEffect(() => {
@@ -34,7 +34,14 @@ export default function Content() {
           }
         >
           <Route path="/srikanth" element={<Srikanth title={title} />} />
-          <Route path="naga" element={<Naga completedValue={completed} />} />
+          <Route
+            path="naga"
+            element={
+              <Suspense fallback={"this page is loading..."}>
+                <NagaPage completedValue={completed} />
+              </Suspense>
+            }
+          />
           <Route path="*" element={<Error />} />
           <Route path="/venu" element={<Venu />} />
           <Route path="/Madhavi" element={<Madhavi />} />
