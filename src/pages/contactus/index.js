@@ -1,6 +1,5 @@
 import Button from "@mui/material/Button";
 import "./index.css";
-import SocialMediaLinks from "../Social media";
 
 const ContactUs = () => {
   return (
@@ -22,7 +21,7 @@ const ContactUs = () => {
       <Button variant="contained" color="success">
         CONTACT US NOW
       </Button>
-      <SocialMediaLinks />
+   
       {/* <button> CONTACT US NOW </button> */}
     </div>
   );

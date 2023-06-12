@@ -1,11 +1,13 @@
 import React from "react";
 import "./index.css";
+import SocialMediaLinks from "../Social media";
 
 const Footer = () => {
   return (
     <footer className="footer">
+     
       <div className="logo">
-        Logo Displays here
+      <SocialMediaLinks></SocialMediaLinks>
         <p style={{ color: "grey" }}>
           CNC delivers customized IT solutions to meet the diverse needs of
           global organizations, ensuring comprehensive coverage of their unique

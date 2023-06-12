@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import axios from "axios";
 
 const Venu = () => {
-  const [data, setData] = useState("");
+  const [data, setData] = useState("no data");
   const [showData, setShowData] = useState(false);
 
   const handleClick = () => {
