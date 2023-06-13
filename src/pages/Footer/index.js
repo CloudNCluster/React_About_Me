@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import SocialMediaLinks from "../Social media";
+import ScrollToTopButton from "../ScrollUp";
 
 const Footer = () => {
   return (
@@ -60,6 +61,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
+      <ScrollToTopButton></ScrollToTopButton>
     </footer>
   );
 };
