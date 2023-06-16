@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import './index.css'
+import React, { useState, useEffect } from "react";
+import Button from "@mui/material/Button";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import "./index.css";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,27 +16,30 @@ const ScrollToTopButton = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior:'smooth'
+      behavior: "smooth",
     });
   };
 
   return (
-    <button
-      className={`scroll-to-top ${isVisible ? 'visible' : ''}`}
+    <Button
+      variant="contained"
+      color="primary"
+      size="medium"
       onClick={scrollToTop}
+      className={`scroll-to-top ${isVisible ? "visible" : ""}`}
     >
-      Scroll to Top
-    </button>
+      <KeyboardArrowUpIcon />
+    </Button>
   );
 };
 

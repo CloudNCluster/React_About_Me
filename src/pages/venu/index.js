@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
+import Button from "@mui/material/Button";
 
 const Venu = () => {
   const [data, setData] = useState("no data");
@@ -30,10 +31,14 @@ const Venu = () => {
   return (
     <div className="App">
       <h1>This function is For Venu</h1>
+      <h2>Full Stack Development</h2>
 
       <a href="/">Go to home page</a>
-      <button onClick={handleClick}>Users</button>
-     
+      <Button
+      variant="contained"
+      color="primary"
+      size="medium"
+      onClick={handleClick}>Users</Button>
 
       {showData ? (
         data ? (

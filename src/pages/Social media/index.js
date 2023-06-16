@@ -1,30 +1,21 @@
 import React from "react";
 import "./index.css"; // Import the CSS file
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const SocialMediaLinks = () => {
   return (
     <div className="image-container">
       <span>Follow us on</span>
       <a href="https://www.facebook.com/">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1200px-Facebook_f_logo_%282021%29.svg.png"
-          alt="Facebook"
-          className="image"
-        />
+      <FacebookIcon/>
       </a>
       <a href="https://twitter.com/">
-        <img
-          src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png"
-          alt="Twitter"
-          className="image"
-        />
+      <TwitterIcon/>
       </a>
       <a href="https://www.instagram.com/">
-        <img
-          src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_640.jpg"
-          alt="Instagram"
-          className="image"
-        />
+      <InstagramIcon/>
       </a>
     </div>
   );
