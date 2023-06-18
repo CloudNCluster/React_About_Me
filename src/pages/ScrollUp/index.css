@@ -1,13 +1,17 @@
 /* CSS for the ScrollToTopButton component */
 .scroll-to-top {
-  position: sticky;
-  height: fit-content;
-  top: 200px;
-  opacity: 0;
-  transition: opacity 0.3s;
+  animation: buttonvisibility 1s ease;
+}
+
+.scroll-to-top:hover {
+  outline: 1px solid white;
+}
+
+@keyframes buttonvisibility {
+  0% {
+    opacity: 0.1;
   }
-  
-  .scroll-to-top.visible {
+  100% {
     opacity: 1;
   }
-  
+}

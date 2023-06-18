@@ -1,19 +1,19 @@
 import React from "react";
 import "./index.css";
 import SocialMediaLinks from "../Social media";
-import ScrollToTopButton from "../ScrollUp";
 
 const Footer = () => {
   return (
     <footer className="footer">
-     
       <div className="logo">
-      <SocialMediaLinks></SocialMediaLinks>
         <p style={{ color: "grey" }}>
           CNC delivers customized IT solutions to meet the diverse needs of
           global organizations, ensuring comprehensive coverage of their unique
           requirements.
         </p>
+        <div style={{ padding: "50px" }}>
+          <SocialMediaLinks />
+        </div>
       </div>
       <hr />
       <div className="logo">
@@ -61,7 +61,6 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <ScrollToTopButton></ScrollToTopButton>
     </footer>
   );
 };

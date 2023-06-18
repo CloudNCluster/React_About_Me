@@ -9,7 +9,7 @@ const ScrollToTopButton = () => {
   useEffect(() => {
     // Show the button when the user has scrolled down 400px
     const handleScroll = () => {
-      if (window.pageYOffset > 400) {
+      if (window.pageYOffset > 100) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -31,15 +31,15 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <Button
-      variant="contained"
-      color="primary"
-      size="medium"
-      onClick={scrollToTop}
-      className={`scroll-to-top ${isVisible ? "visible" : ""}`}
-    >
-      <KeyboardArrowUpIcon />
-    </Button>
+    isVisible && (
+      <Button
+        variant="contained"
+        onClick={scrollToTop}
+        className={`scroll-to-top`}
+      >
+        <KeyboardArrowUpIcon />
+      </Button>
+    )
   );
 };
 

@@ -1,8 +1,18 @@
-.image {
-  width: 30px;
-  height: 30px;
-}
 .image-container {
   display: flex;
   justify-content: center;
+}
+.image {
+  height: inherit;
+  padding: 15px;
+}
+.fab {
+  background-color: #013771;
+  color: #999b9f;
+  height: 44px;
+  width: 44px;
+}
+.fab:hover {
+  background-color: blue;
+  color: white;
 }
