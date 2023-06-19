@@ -4,15 +4,16 @@
 }
 .image {
   height: inherit;
-  padding: 15px;
+  padding: 2%;
 }
-.fab {
-  background-color: #013771;
+#fab {
+  background-color: #00264f;
   color: #999b9f;
-  height: 44px;
-  width: 44px;
+  height: 25px;
+  box-shadow: 0 0 0;
+  width: 40px;
 }
-.fab:hover {
+#fab:hover {
   background-color: blue;
   color: white;
 }

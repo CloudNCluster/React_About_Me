@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Button from "@mui/material/Button";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import "./index.css";
+import { Fab } from "@mui/material";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,13 +32,14 @@ const ScrollToTopButton = () => {
 
   return (
     isVisible && (
-      <Button
-        variant="contained"
+      <Fab
+        size="medium"
         onClick={scrollToTop}
-        className={`scroll-to-top`}
+        color="primary"
+        className="scroll-to-top"
       >
         <KeyboardArrowUpIcon />
-      </Button>
+      </Fab>
     )
   );
 };
