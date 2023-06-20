@@ -1,0 +1,9 @@
+@mixin important-text {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight:lighter;
+    border: rgb(6, 6, 204);
+  }
+  h4{
+    @include important-text;
+  }
