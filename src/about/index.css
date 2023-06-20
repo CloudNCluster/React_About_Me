@@ -1,0 +1,74 @@
+.h1 {
+  font-size: 2em;
+  max-width: 35%;
+  text-align: left;
+  line-height: 3rem;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.p {
+  max-width: 35%;
+  line-height: 2rem;
+  font-size: large;
+}
+.divbackground {
+  display: flex;
+  background-color: rgb(236, 234, 234);
+  width: inherit;
+  height: 20%;
+  padding: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.learnmorebutton {
+  width: fit-content;
+}
+.image {
+  max-width: 30%;
+  max-height: 40%;
+}
+.imagebar {
+  max-height: 20%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+}
+/* .clients {
+  height: 20rem;
+  max-height: 20rem;
+  padding-top: 50px;
+} */
+.Kanectify {
+  width: 10%;
+  height: 10%;
+  padding: 30px;
+}
+.nexus {
+  width: 25%;
+}
+.ventures {
+  width: 20%;
+}
+.font {
+  font-size: 2rem;
+}
+@media (max-width: 700px) {
+  .imagebar {
+    flex-direction: column;
+    width: inherit;
+    height: inherit;
+  }
+  .p,
+  .h1 {
+    min-width: 100%;
+  }
+  .image {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .learnmorebutton {
+    width: 100%;
+  }
+}

@@ -3,7 +3,6 @@
   justify-content: center;
 }
 .image {
-  height: inherit;
   padding: 2%;
 }
 #fab {
@@ -11,9 +10,14 @@
   color: #999b9f;
   height: 25px;
   box-shadow: 0 0 0;
-  width: 40px;
+  width: 35px;
 }
 #fab:hover {
   background-color: blue;
   color: white;
+}
+@media (max-width: 700px) {
+  #fab {
+    padding: 0px;
+  }
 }

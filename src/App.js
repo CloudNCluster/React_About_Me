@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import ScrollToTopButton from "./pages/ScrollUp";
+import About from "./about";
 // import ContactUs from "./pages/contactus";
 // import Content from "./pages/content";
 // import Footer from "./pages/Footer/index";
@@ -14,6 +15,7 @@ function App() {
       <Suspense fallback="Content is Loading, Please wait....">
         <Contentpage />
       </Suspense>
+      <About />
       <Suspense fallback="Content is Loading, Please wait....">
         <ContactUsPage />
       </Suspense>
