@@ -3,21 +3,23 @@
   justify-content: center;
 }
 .image {
-  padding: 2%;
+  padding: 4%;
 }
 #fab {
   background-color: #00264f;
   color: #999b9f;
   height: 25px;
-  box-shadow: 0 0 0;
   width: 35px;
 }
 #fab:hover {
   background-color: blue;
   color: white;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   #fab {
     padding: 0px;
+  }
+  .image-container {
+    flex-direction: column;
   }
 }

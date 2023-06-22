@@ -17,58 +17,47 @@ const Footer = () => {
 
         <SocialMediaLinks />
       </div>
-      <hr />
       <div className="logo">
         <h2> Quick Menu </h2>
         <ul className="list">
-          {/* <Link style={{ textDecoration: "none" }} to="srikanth"> */}
-          <a href="srikanth" className="list-item">
-            <li>Srikanth</li>
-          </a>
-          {/* </Link> */}
-          {/* <Link style={{ textDecoration: "none" }} to="venu"> */}
+          <li>
+            <a href="srikanth" className="list-item">
+              Srikanth
+            </a>
+          </li>
+
           <a href="venu" className="list-item">
             <li>Venu</li>
           </a>
-          {/* </Link> */}
-          {/* <Link style={{ textDecoration: "none" }}> */}
-          <a href="madhavi" className="list-item">
-            <li>Madhavi</li>
-          </a>
-          {/* </Link> */}
-          {/* <Link style={{ textDecoration: "none" }}> */}
-          <a href="Naga" className="list-item">
-            <li>Naga</li>
-          </a>
-          {/* </Link> */}
+          <li>
+            <a href="madhavi" className="list-item">
+              Madhavi
+            </a>
+          </li>
+          <li style={{ padding: "15px" }}>
+            <a href="Naga" className="list-item">
+              Naga
+            </a>
+          </li>
         </ul>
       </div>
-      <hr />
       <div className="logo">
         <h2 style={{ color: "white" }}> Contact </h2>
 
         <p style={{ color: "grey" }}>
-          <LocationOnSharpIcon fontSize="small" />
+          <LocationOnSharpIcon color="primary" fontSize="small" />
           1234 Dallas Parkway, Suite 100, Frisco, TX 75034
         </p>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            flexDirection: "column",
-            color: "grey",
-          }}
-        >
-          <p>
-            <PhoneInTalkSharpIcon /> 000000000000000
-          </p>
-          <p>
-            <EmailSharpIcon />
-            Info@cloudncluster.com
-          </p>
-        </div>
       </div>
-      <hr />
+      <div className="logo">
+        <p style={{ color: "grey" }}>
+          <PhoneInTalkSharpIcon color="primary" /> 000000000000000
+        </p>
+        <p style={{ color: "grey" }}>
+          <EmailSharpIcon color="primary" />
+          info@cloudncluster.com
+        </p>
+      </div>
     </footer>
   );
 };

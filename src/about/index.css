@@ -40,7 +40,7 @@
   max-height: 20rem;
   padding-top: 50px;
 } */
-.Kanectify {
+.clientimages {
   width: 10%;
   height: 10%;
   padding: 30px;
@@ -54,7 +54,7 @@
 .font {
   font-size: 2rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .imagebar {
     flex-direction: column;
     width: inherit;
@@ -70,5 +70,8 @@
   }
   .learnmorebutton {
     width: 100%;
+  }
+  .clientimages {
+    width: 40%;
   }
 }

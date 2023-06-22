@@ -24,23 +24,23 @@ const About = () => {
         src="https://cloudncluster.com/images/transformTechs_icon.png"
         alt="img-not-found"
       />
-      <div className="clients">
+      <div>
         <h1 className="h1 font"> Our Clients: </h1>
         <div className="imagebar">
           <img
             src="https://cloudncluster.com/images/Kanectify.jpeg"
             alt="img-not-found"
-            className="Kanectify"
+            className="clientimages"
           />
           <img
             src="https://cloudncluster.com/images/Bio9Ventures.png"
             alt="img-not-found"
-            className="Kanectify ventures"
+            className="clientimages ventures"
           />
           <img
             src="https://cloudncluster.com/images/partners/nexus.jpeg"
             alt="img-not-found"
-            className="Kanectify nexus"
+            className="clientimages nexus"
           />
         </div>
       </div>
