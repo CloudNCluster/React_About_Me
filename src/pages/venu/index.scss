@@ -7,3 +7,6 @@
   h4{
     @include important-text;
   }
+  h2{
+    @include important-text()
+  }
