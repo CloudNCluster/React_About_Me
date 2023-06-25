@@ -7,9 +7,10 @@ import Error from "../Error";
 import Madhavi from "../Madhavi";
 import Venu from "../venu";
 
-export default function Content() {
+export default function Content(props) {
   const NagaPage = lazy(() => import("../Naga"));
   const [title, setTitle] = useState("");
+
   const [completed, setCompleted] = useState(false);
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos/1").then((response) => {
@@ -27,18 +28,14 @@ export default function Content() {
       <Routes>
         <Route
           path="/"
-          element={
-            <>
-              <Home />
-            </>
-          }
+          element={<Home toogleTheme={props.toogleTheme} theme={props.theme} />}
         >
-          <Route path="/srikanth" element={<Srikanth title={title} />} />
+          <Route path="/" index="true" element={<Srikanth title={title} />} />
           <Route
             path="naga"
             element={
               <Suspense fallback={"this page is loading..."}>
-                <NagaPage completedValue={completed} />
+                <NagaPage completedValue={completed} theme={props.theme} />
               </Suspense>
             }
           />

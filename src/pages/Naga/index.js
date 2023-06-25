@@ -10,6 +10,12 @@ const Naga = (props) => {
   const [error, setError] = useState(false);
   const [showText, setShowText] = useState(false);
 
+  var textBox = {
+    backgroundColor: props.theme === "dark" ? "white" : "white",
+    color: props.theme === "dark" ? "black" : "black",
+    borderRadius: "5px",
+  };
+
   const taskHandler = (event) => {
     setTask(event.target.value);
   };
@@ -49,7 +55,7 @@ const Naga = (props) => {
           This Button Created using Meterial-UI
         </p>
       )}
-      <div className="task-board">
+      <div className="task-board" style={textBox}>
         <h2> Task Board </h2>
 
         {/* <input
@@ -66,7 +72,7 @@ const Naga = (props) => {
           type="text"
           onChange={taskHandler}
           value={task}
-          style={{ marginBottom: "10px" }}
+          style={textBox}
         />
 
         {error && <p style={{ color: "red" }}> Input Is Invalid</p>}

@@ -22,13 +22,13 @@
   /* width: 50%; */
   max-width: 50%;
   min-width: 20%;
-  box-shadow: 0px 0px 0px 1px black;
+  box-shadow: 0px 0px 0px 1px blue;
   flex-direction: column;
   margin: 50px auto;
 }
 
 input {
-  max-width: 50%;
   height: 2rem;
+  border-radius: 20px;
   margin: 10px;
 }

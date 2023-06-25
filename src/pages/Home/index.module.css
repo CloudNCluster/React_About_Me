@@ -13,7 +13,6 @@ a.active {
 .header {
   display: flex;
   justify-content: flex-end;
-  background-color: white;
   box-shadow: 0 0 5px 2px black;
   position: sticky;
   z-index: 100000;

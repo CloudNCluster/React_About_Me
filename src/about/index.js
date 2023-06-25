@@ -1,9 +1,13 @@
 import { Button } from "@mui/material";
 import "./index.css";
 
-const About = () => {
+const About = (props) => {
+  let myStyle = {
+    backgroundColor: props.theme === "dark" ? "#222222" : "",
+  };
+
   return (
-    <div className="divbackground">
+    <div className="divbackground" style={myStyle}>
       <p style={{ color: "orange", fontSize: "20px" }}> Why Choose CNC? </p>
       <h1 className="h1">
         CNC is a rapidly growing software solutions company that offers
