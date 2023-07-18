@@ -20,21 +20,23 @@ const Footer = () => {
       <div className="logo">
         <h2> Quick Menu </h2>
         <ul className="list">
-          <li>
+          <li style={{ padding: "5px" }}>
             <a href="srikanth" className="list-item">
               Srikanth
             </a>
           </li>
 
-          <a href="venu" className="list-item">
-            <li>Venu</li>
-          </a>
-          <li>
+          <li style={{ padding: "5px" }}>
+            <a href="venu" className="list-item">
+              Venu
+            </a>
+          </li>
+          <li style={{ padding: "5px" }}>
             <a href="madhavi" className="list-item">
               Madhavi
             </a>
           </li>
-          <li style={{ padding: "15px" }}>
+          <li style={{ padding: "5px" }}>
             <a href="Naga" className="list-item">
               Naga
             </a>

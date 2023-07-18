@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import Button from "@mui/material/Button";
-import './index.scss'
+import "./index.scss";
 import Login from "../../login";
 
 const Venu = () => {
@@ -13,7 +13,6 @@ const Venu = () => {
   const handleClick = () => {
     setShowData(!showData);
   };
-
 
   const getAllData = () => {
     axios
@@ -35,15 +34,18 @@ const Venu = () => {
       <h1>This function is For Venu</h1>
       <h2 className="important-text">Login Page</h2>
       {/* //This is for Login page */}
-      <Login/>
+      <Login />
       <h4 className="important-text">Its a SASS mixin</h4>
 
       <a href="/">Go to home page</a>
       <Button
-      variant="contained"
-      color="primary"
-      size="medium"
-      onClick={handleClick}>Users</Button>
+        variant="contained"
+        color="primary"
+        size="medium"
+        onClick={handleClick}
+      >
+        Users
+      </Button>
 
       {showData ? (
         data ? (
@@ -56,7 +58,6 @@ const Venu = () => {
           <h3>No data yet</h3>
         )
       ) : null}
-
     </div>
   );
 };
